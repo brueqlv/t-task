@@ -1,0 +1,15 @@
+@import '../variables.scss'; 
+
+@function darken-color($color, $percentage) {
+    @return mix(rgb(0, 0, 0), $color, $percentage);
+  }
+
+.page-title{
+    width:100%;
+    color: $textcolor;
+    background-color: darken-color($backgroundcolor, 10%);
+    text-align: center;
+    padding:10px;
+    font-weight: 700;
+    box-shadow: $shadow;
+}
